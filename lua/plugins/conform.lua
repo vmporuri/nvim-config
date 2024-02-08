@@ -7,6 +7,7 @@ return {
         conform.setup({
             formatters_by_ft = {
                 markdown = { "prettier" },
+                html = { "prettier" },
                 lua = { "stylua" },
                 python = { "black" },
             },
