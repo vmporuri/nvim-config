@@ -35,7 +35,8 @@ return {
 
         require('mason').setup({})
         require('mason-lspconfig').setup({
-            ensure_installed = { 'lua_ls', 'clangd', 'rust_analyzer', 'pyright' },
+            ensure_installed = { 'lua_ls', 'clangd', 'rust_analyzer', 'pyright',
+                'html', 'cssls' },
             handlers = {
                 lsp_zero.default_setup,
                 lua_ls = function()
@@ -53,8 +54,8 @@ return {
                 { name = 'path' },
                 { name = 'nvim_lsp' },
                 { name = 'nvim_lua' },
-                { name = 'luasnip', keyword_length = 2 },
-                { name = 'buffer', keyword_length = 3 },
+                { name = 'luasnip',                keyword_length = 2 },
+                { name = 'buffer',                 keyword_length = 3 },
                 { name = 'nvim_lsp_signature_help' }
             },
             formatting = lsp_zero.cmp_format(),

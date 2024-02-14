@@ -4,21 +4,21 @@ local yank_group = augroup("HighlightYank", {})
 local indent_group = augroup("SmallIndent", {})
 
 autocmd("TextYankPost", {
-	group = yank_group,
-	pattern = "*",
-	callback = function()
-		vim.highlight.on_yank({
-			higroup = "IncSearch",
-			timeout = 100,
-		})
-	end,
+    group = yank_group,
+    pattern = "*",
+    callback = function()
+        vim.highlight.on_yank({
+            higroup = "IncSearch",
+            timeout = 100,
+        })
+    end,
 })
 
 autocmd("FileType", {
-	group = indent_group,
-	pattern = { "c", "html" },
-	callback = function()
-		vim.opt_local.shiftwidth = 2
-		vim.opt_local.tabstop = 2
-	end,
+    group = indent_group,
+    pattern = { "c", "html", "css" },
+    callback = function()
+        vim.opt_local.shiftwidth = 2
+        vim.opt_local.tabstop = 2
+    end,
 })

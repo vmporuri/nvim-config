@@ -10,7 +10,7 @@ return {
                 "elixir", "heex", "javascript", "html", "python", "markdown",
                 "markdown_inline" },
             sync_install = false,
-            highlight = { enable = true },
+            highlight = { enable = true, disable = { "css" }, },
             indent = { enable = true },
             autotag = {
                 enable = true,

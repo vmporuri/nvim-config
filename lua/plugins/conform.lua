@@ -8,7 +8,7 @@ return {
             formatters_by_ft = {
                 markdown = { "prettier" },
                 html = { "prettier" },
-                lua = { "stylua" },
+                css = { "prettier" },
                 python = { "black" },
             },
             format_on_save = {
