@@ -15,4 +15,3 @@ require("options")
 require("remaps")
 require("autocmds")
 require("lazy").setup("plugins")
-
