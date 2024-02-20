@@ -6,10 +6,11 @@ return {
 
         conform.setup({
             formatters_by_ft = {
-                markdown = { "prettier" },
-                html = { "prettier" },
-                css = { "prettier" },
                 python = { "black" },
+                html = { { "prettierd", "prettier" } },
+                css = { { "prettierd", "prettier" } },
+                javascript = { { "prettierd", "prettier" } },
+                markdown = { { "prettierd", "prettier" } },
             },
             format_on_save = {
                 lsp_fallback = true,
