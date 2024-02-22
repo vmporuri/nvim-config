@@ -10,7 +10,6 @@ return {
 		"saadparwaiz1/cmp_luasnip",
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-nvim-lua",
-		"hrsh7th/cmp-nvim-lsp-signature-help",
 		"L3MON4D3/LuaSnip",
 		"rafamadriz/friendly-snippets",
 		{ "lukas-reineke/lsp-format.nvim", config = true },
@@ -48,7 +47,7 @@ return {
 			vim.keymap.set("n", "<leader>lrn", function()
 				vim.lsp.buf.rename()
 			end, opts)
-			vim.keymap.set("i", "<C-h>", function()
+			vim.keymap.set("i", "<C-s>", function()
 				vim.lsp.buf.signature_help()
 			end, opts)
 		end)
@@ -83,7 +82,6 @@ return {
 				{ name = "nvim_lua" },
 				{ name = "luasnip", keyword_length = 2 },
 				{ name = "buffer", keyword_length = 3 },
-				{ name = "nvim_lsp_signature_help" },
 			},
 			formatting = lsp_zero.cmp_format(),
 			mapping = cmp.mapping.preset.insert({
