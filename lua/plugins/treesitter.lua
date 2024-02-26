@@ -56,6 +56,8 @@ return {
 						["ic"] = "@class.inner",
 						["a?"] = "@conditional.outer",
 						["i?"] = "@conditional.inner",
+						["al"] = "@loop.outer",
+						["il"] = "@loop.inner",
 					},
 				},
 			},
