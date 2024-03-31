@@ -1,105 +1,34 @@
 # My Neovim Configuration
 
-Welcome to my Neovim configuration! This setup is tailored to my personal
-preferences and productivity needs. Below you'll find information on the
-plugins I'm using and how to set up your environment with them.
+Welcome to my Neovim configuration! Since I'm constantly updating my setup and
+switching between computers, I decided to upload my config to GitHub. If you've
+somehow stumbled on my repository, feel free to browse around and try it out.
 
-![Meet my neovim configuration!](assets/nvim-screenshot.png)
+![Meet my neovim configuration!](https://i.imgur.com/QmfBsT5.png)
 
-## Plugins Used
+## Features
 
-### Lazy
-
-Lazy is a lightweight package manager for Neovim, allowing for easy
-installation and management of plugins.
-
-### LSP-Zero
-
-LSP-Zero provides language server support for linting and formatting, enhancing
-code quality and productivity.
-
-### Tokyonight
-
-Tokyonight is a beautiful colorscheme that adds visual appeal to the Neovim
-interface.
-
-### Treesitter
-
-Treesitter enhances code editing with improved syntax highlighting and text
-object manipulation.
-
-### Telescope
-
-Telescope is a powerful fuzzy finder and file picker, streamlining navigation
-and search within Neovim.
-
-### Harpoon
-
-Harpoon simplifies navigation within projects by providing quick access to
-frequently used files and directories.
-
-### Vim Fugitive
-
-Vim Fugitive integrates Git functionality directly into Neovim, making it easy
-to manage version control from within the editor.
-
-### Tmux-Navigator
-
-Tmux-Navigator enables seamless navigation between Neovim and Tmux sessions,
-enhancing productivity for terminal-based workflows.
-
-### Gitsigns
-
-Gitsigns provides inline Git status indicators in the Neovim gutter, aiding in
-code versioning and collaboration.
-
-### Autopairs
-
-Autopairs automatically inserts matching pairs of brackets, braces, and quotes,
-reducing manual typing and syntax errors.
-
-### Lualine
-
-Lualine is a customizable statusline plugin for Neovim, displaying useful
-information about the current editing session.
-
-### Comment
-
-Comment facilitates commenting and uncommenting code blocks with ease,
-improving code readability.
-
-### Web-Devicons
-
-Web-Devicons adds file type icons to Neovim's file explorer and statusline,
-improving visual navigation.
-
-### Undotree
-
-Undotree provides a visual representation of the undo history, allowing for
-easy navigation and management of changes.
+- Easy package management with Lazy
+- Simple LSP setup with LSP-Zero
+- Syntax highlighting with Treesitter
+- Robust navigation with Telescope, Harpoon, and Oil
+- Git integration with Fugitive and Gitsigns
+- Change management with Undotree
+- And of course, ✨aesthetics✨ thanks to Tokyonight, Web-Devicons, and Lualine
 
 ## Installation
 
 To use my Neovim configuration, follow these steps:
 
 1. Ensure Neovim is installed on your system.
-2. Clone this repository to your preferred location:
+2. Clone this repository:
 
 ```bash
 git clone https://github.com/vmporuri/nvim-config.git ~/.config/nvim
 ```
 
-Enjoy your enhanced Neovim experience!
+## Acknowledgements
 
-## Customization
-
-Feel free to customize this configuration to suit your own preferences. You can
-modify settings, add or remove plugins, and tweak key mappings as needed.
-
-## Feedback
-
-If you have any questions, suggestions, or feedback about my Neovim
-configuration, don't hesitate to reach out to me. I'm always looking for ways
-to improve my setup and would love to hear from you!
-
-Happy coding! 🚀
+A huge thanks to [ThePrimeagen](https://github.com/ThePrimeagen). Before I made
+my own config, I used his to get my feet wet with Neovim. My experiences
+with his setup heavily inspired this config.
