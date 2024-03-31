@@ -12,6 +12,10 @@ return {
 				html = { { "prettierd", "prettier" } },
 				css = { { "prettierd", "prettier" } },
 				javascript = { { "prettierd", "prettier" } },
+				typescript = { { "prettierd", "prettier" } },
+				javascriptreact = { { "prettierd", "prettier" } },
+				typescriptreact = { { "prettierd", "prettier" } },
+				json = { { "prettierd", "prettier" } },
 				markdown = { { "prettierd", "prettier" } },
 			},
 			format_on_save = {
