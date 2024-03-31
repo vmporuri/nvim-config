@@ -6,7 +6,9 @@ return {
 			user_default_options = {
 				mode = "background",
 				names = true,
+				css = true,
 				tailwind = true,
+				always_update = true,
 			},
 		})
 	end,
