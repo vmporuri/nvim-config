@@ -2,6 +2,8 @@ vim.g.mapleader = " "
 
 vim.keymap.set("i", "<M-BS>", "<C-w>")
 
+vim.keymap.set({ "n", "i", "v" }, "<C-c>", "<Esc>")
+
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
