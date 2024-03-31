@@ -75,6 +75,8 @@ return {
 		local cmp = require("cmp")
 		local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
+		require("luasnip.loaders.from_vscode").lazy_load()
+
 		cmp.setup({
 			sources = {
 				{ name = "path" },
