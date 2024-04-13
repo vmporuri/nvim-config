@@ -5,6 +5,11 @@ return {
 		local conform = require("conform")
 
 		conform.setup({
+			formatters = {
+				astyle = {
+					args = "--max-code-length=80 --align-pointer=type --indent=spaces=2",
+				},
+			},
 			formatters_by_ft = {
 				python = { "black" },
 				lua = { "stylua" },
