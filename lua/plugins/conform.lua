@@ -8,6 +8,7 @@ return {
 			formatters_by_ft = {
 				python = { "black" },
 				lua = { "stylua" },
+				c = { "astyle" },
 				sh = { "shfmt" },
 				html = { { "prettierd", "prettier" } },
 				css = { { "prettierd", "prettier" } },
