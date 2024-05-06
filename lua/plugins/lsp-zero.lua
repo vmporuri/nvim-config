@@ -38,11 +38,14 @@ return {
 			vim.keymap.set("n", "[d", function()
 				vim.diagnostic.goto_prev()
 			end, opts)
+			vim.keymap.set("n", "<leader>dq", function()
+				vim.diagnostic.setqflist()
+			end, opts)
 			vim.keymap.set("n", "<leader>ca", function()
 				vim.lsp.buf.code_action()
 			end, opts)
 			vim.keymap.set("n", "<leader>rf", function()
-				require("telescope.builtin").lsp_references()
+				vim.lsp.buf.references()
 			end, { noremap = true, silent = true }, opts)
 			vim.keymap.set("n", "<leader>rn", function()
 				vim.lsp.buf.rename()
@@ -90,7 +93,7 @@ return {
 				["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
 				["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
 				["<C-y>"] = cmp.mapping.confirm({ select = true }),
-				["<C-Space>"] = cmp.mapping.complete(),
+				["<C-s>"] = cmp.mapping.complete(),
 			}),
 		})
 

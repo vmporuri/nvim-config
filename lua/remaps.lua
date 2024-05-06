@@ -22,5 +22,5 @@ vim.keymap.set("n", "Q", "<nop>")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
-vim.keymap.set({ "n", "v" }, "H", "^")
-vim.keymap.set({ "n", "v" }, "L", "$")
+vim.keymap.set("n", "]q", [[:cnext<CR>]])
+vim.keymap.set("n", "[q", [[:cprev<CR>]])
