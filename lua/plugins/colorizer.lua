@@ -3,6 +3,14 @@ return {
 	config = function()
 		local colorizer = require("colorizer")
 		colorizer.setup({
+			filetypes = {
+				"html",
+				"css",
+				"javascript",
+				"javascriptreact",
+				"typescript",
+				"typescriptreact",
+			},
 			user_default_options = {
 				mode = "background",
 				names = true,
