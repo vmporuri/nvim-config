@@ -11,7 +11,7 @@ return {
 				},
 			},
 			formatters_by_ft = {
-				python = { "black" },
+				python = { "ruff_format" },
 				lua = { "stylua" },
 				c = { "astyle" },
 				sh = { "shfmt" },
