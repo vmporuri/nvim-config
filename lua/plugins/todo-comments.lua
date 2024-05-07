@@ -1,6 +1,6 @@
 return {
 	"folke/todo-comments.nvim",
-	dependencies = { "nvim-lua/plenary.nvim" },
+	dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope.nvim" },
 	lazy = false,
 	opts = {},
 	keys = {
@@ -15,6 +15,10 @@ return {
 			function()
 				require("todo-comments").jump_prev()
 			end,
+		},
+		{
+			"<leader>pt",
+			"TodoTelescope",
 		},
 	},
 }
