@@ -50,7 +50,7 @@ return {
 			vim.keymap.set("n", "<leader>rn", function()
 				vim.lsp.buf.rename()
 			end, opts)
-			vim.keymap.set("i", "<C-s>", function()
+			vim.keymap.set("i", "<C-h>", function()
 				vim.lsp.buf.signature_help()
 			end, opts)
 		end)
