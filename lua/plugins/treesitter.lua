@@ -46,9 +46,42 @@ return {
 					"markdown",
 				},
 			},
+			incremental_selection = {
+				enable = true,
+				keymaps = {
+					init_selection = "<leader>=",
+					node_incremental = "<leader>=",
+					node_decremental = "<leader>-",
+				},
+			},
 			textobjects = {
+				move = {
+					enable = true,
+					set_jumps = true,
+					goto_next_start = {
+						["]f"] = "@function.outer",
+						["]c"] = "@class.outer",
+						["]r"] = "@parameter.inner",
+					},
+					goto_next_end = {
+						["]F"] = "@function.outer",
+						["]C"] = "@class.outer",
+						["]R"] = "@parameter.inner",
+					},
+					goto_previous_start = {
+						["[f"] = "@function.outer",
+						["[m"] = "@class.outer",
+						["[r"] = "@parameter.inner",
+					},
+					goto_previous_end = {
+						["[F"] = "@function.outer",
+						["[M"] = "@class.outer",
+						["[R"] = "@parameter.inner",
+					},
+				},
 				select = {
 					enable = true,
+					lookahead = true,
 					keymaps = {
 						["af"] = "@function.outer",
 						["if"] = "@function.inner",
@@ -56,9 +89,12 @@ return {
 						["ic"] = "@class.inner",
 						["a?"] = "@conditional.outer",
 						["i?"] = "@conditional.inner",
+						["al"] = "@loop.outer",
 						["il"] = "@loop.inner",
 						["ar"] = "@parameter.outer",
 						["ir"] = "@parameter.inner",
+						["l"] = "@assignment.lhs",
+						["r"] = "@assignment.rhs",
 					},
 				},
 			},
