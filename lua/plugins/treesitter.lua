@@ -21,6 +21,7 @@ return {
 				"python",
 				"markdown",
 				"markdown_inline",
+				"go",
 			},
 			sync_install = false,
 			highlight = { enable = true, disable = { "css" } },
