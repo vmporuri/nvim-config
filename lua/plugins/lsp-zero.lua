@@ -41,7 +41,7 @@ return {
 			vim.keymap.set("n", "<leader>dq", function()
 				vim.diagnostic.setqflist()
 			end, opts)
-			vim.keymap.set("n", "<leader>ca", function()
+			vim.keymap.set({ "n", "x" }, "<leader>ca", function()
 				vim.lsp.buf.code_action()
 			end, opts)
 			vim.keymap.set("n", "<leader>rf", function()
@@ -72,6 +72,24 @@ return {
 					local lua_opts = lsp_zero.nvim_lua_ls()
 					require("lspconfig").lua_ls.setup(lua_opts)
 				end,
+				clangd = function()
+					require("lspconfig").clangd.setup({
+						cmd = {
+							"clangd",
+							"--background-index",
+							"-j=12",
+							"--query-driver=/usr/bin/**/clang-*,/bin/clang,/bin/clang++,/usr/bin/gcc,/usr/bin/g++",
+							"--clang-tidy",
+							"--clang-tidy-checks=*",
+							"--all-scopes-completion",
+							"--cross-file-rename",
+							"--completion-style=detailed",
+							"--header-insertion-decorators",
+							"--header-insertion=iwyu",
+							"--pch-storage=memory",
+						},
+					})
+				end,
 			},
 		})
 
@@ -98,10 +116,10 @@ return {
 		})
 
 		local ls = require("luasnip")
-		vim.keymap.set({ "i", "s" }, "<C-L>", function()
+		vim.keymap.set({ "i", "s" }, "<C-l>", function()
 			ls.jump(1)
 		end, { silent = true })
-		vim.keymap.set({ "i", "s" }, "<C-J>", function()
+		vim.keymap.set({ "i", "s" }, "<C-h>", function()
 			ls.jump(-1)
 		end, { silent = true })
 	end,
