@@ -96,6 +96,7 @@ return {
 						["ir"] = "@parameter.inner",
 						["l"] = "@assignment.lhs",
 						["r"] = "@assignment.rhs",
+						["as"] = "@statement.outer",
 					},
 				},
 			},
