@@ -33,7 +33,7 @@ return {
 						action = "Telescope live_grep",
 					},
 				},
-				project = { enable = true, limit = 3, action = "Telescope find_files cwd=" },
+				project = { enable = true, limit = 2, action = "Telescope find_files cwd=" },
 				mru = { limit = 3 },
 			},
 		})
