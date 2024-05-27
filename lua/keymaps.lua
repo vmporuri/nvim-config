@@ -25,3 +25,6 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 
 vim.keymap.set("n", "]q", [[:cnext<CR>]])
 vim.keymap.set("n", "[q", [[:cprev<CR>]])
+
+vim.keymap.set("n", "<Leader>o", [[:<C-u>put =repeat(nr2char(10),v:count)<Bar>execute "'[-1"<CR>]])
+vim.keymap.set("n", "<Leader>O", [[:<C-u>put!=repeat(nr2char(10),v:count)<Bar>execute "']+1"<CR>]])
