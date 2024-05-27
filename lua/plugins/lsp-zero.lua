@@ -10,7 +10,7 @@ return {
 		"saadparwaiz1/cmp_luasnip",
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-nvim-lua",
-		"hrsh7th/cmp-nvim-lsp-signature-help",
+		"ray-x/lsp_signature.nvim",
 		"L3MON4D3/LuaSnip",
 		"rafamadriz/friendly-snippets",
 		{ "lukas-reineke/lsp-format.nvim", config = true },
@@ -54,6 +54,14 @@ return {
 			vim.keymap.set("i", "<C-h>", function()
 				vim.lsp.buf.signature_help()
 			end, opts)
+
+			require("lsp_signature").on_attach({
+				bind = true,
+				hint_enable = false,
+				handler_opts = {
+					border = "rounded",
+				},
+			}, bufnr)
 		end)
 
 		require("mason").setup({})
@@ -103,7 +111,6 @@ return {
 			sources = {
 				{ name = "path" },
 				{ name = "nvim_lsp" },
-				{ name = "nvim_lsp_signature_help" },
 				{ name = "nvim_lua" },
 				{ name = "luasnip", keyword_length = 2 },
 				{ name = "buffer", keyword_length = 3 },
