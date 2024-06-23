@@ -34,3 +34,7 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 vim.opt.iskeyword:append("-")
+
+vim.cmd([[set ttimeout]])
+vim.cmd([[set ttimeoutlen=1]])
+vim.cmd([[set ttyfast]])
