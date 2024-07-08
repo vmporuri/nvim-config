@@ -38,3 +38,5 @@ vim.opt.iskeyword:append("-")
 vim.cmd([[set ttimeout]])
 vim.cmd([[set ttimeoutlen=1]])
 vim.cmd([[set ttyfast]])
+
+vim.o.exrc = true
