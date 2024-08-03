@@ -16,7 +16,7 @@ autocmd("TextYankPost", {
 
 autocmd("FileType", {
 	group = indent_group,
-	pattern = { "c", "html", "css", "javascript", "typescript", "javascriptreact", "typescriptreact", "json" },
+	pattern = { "html", "css", "javascript", "typescript", "javascriptreact", "typescriptreact", "json" },
 	callback = function()
 		vim.opt_local.shiftwidth = 2
 		vim.opt_local.tabstop = 2

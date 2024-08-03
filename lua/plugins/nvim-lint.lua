@@ -9,6 +9,7 @@ return {
 
 		lint.linters_by_ft = {
 			python = { "ruff" },
+			cmake = { "cmakelint" },
 			javascript = { "eslint_d" },
 			typescript = { "eslint_d" },
 			javascriptreact = { "eslint_d" },

@@ -9,6 +9,8 @@ return {
 				python = { "ruff_format" },
 				lua = { "stylua" },
 				c = { "clang_format" },
+				cpp = { "clang_format" },
+				cmake = { "cmake_format" },
 				go = { "goimports", "gofumpt", "golines" },
 				sh = { "shfmt" },
 				html = { { "prettierd", "prettier" } },
