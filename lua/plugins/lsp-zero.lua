@@ -99,6 +99,7 @@ return {
 						},
 					})
 				end,
+				jdtls = function() end,
 			},
 		})
 

@@ -8,6 +8,7 @@ return {
 			formatters_by_ft = {
 				python = { "ruff_format" },
 				lua = { "stylua" },
+				java = { "clang_format" },
 				c = { "clang_format" },
 				cpp = { "clang_format" },
 				cmake = { "cmake_format" },

@@ -29,6 +29,7 @@
   "nvim-dap-go": { "branch": "main", "commit": "3999f0744e80d2dba5775189fc7c7a5e9846053e" },
   "nvim-dap-python": { "branch": "master", "commit": "d777c2b32ed39f61209c09bede28d7491621a631" },
   "nvim-dap-ui": { "branch": "master", "commit": "b7267003ba4dd860350be86f75b9d9ea287cedca" },
+  "nvim-jdtls": { "branch": "master", "commit": "99e4b2081de1d9162666cc7b563cbeb01c26b66b" },
   "nvim-lint": { "branch": "master", "commit": "99f93757276ea55c35bbe74ad2a3d25fc504643b" },
   "nvim-lspconfig": { "branch": "master", "commit": "a27179f56c6f98a4cdcc79ee2971b514815a4940" },
   "nvim-nio": { "branch": "master", "commit": "7969e0a8ffabdf210edd7978ec954a47a737bbcc" },
